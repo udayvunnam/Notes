@@ -1,6 +1,19 @@
 # Typescript Gotchas
 
-Use [TS playground](https://www.typescriptlang.org/play/index.html) that compiles TS to JS with varying configuration setup
+- [Typescript Gotchas](#typescript-gotchas)
+  - [Configuration & linting](#configuration--linting)
+  - [Compile](#compile)
+  - [Compilation steps](#compilation-steps)
+  - [Declaration files](#declaration-files)
+    - [Built-in](#built-in)
+    - [External](#external)
+      - [_Bundled with the library_](#bundled-with-the-library)
+      - [_Not included with library_](#not-included-with-library)
+      - [_No type definitions of any kind_](#no-type-definitions-of-any-kind)
+  - [Declaration merging](#declaration-merging)
+  - [Useful types](#useful-types)
+  - [Useful links](#useful-links)
+    Use [TS playground](https://www.typescriptlang.org/play/index.html) that compiles TS to JS with varying configuration setup
 
 ## Configuration & linting
 
@@ -194,8 +207,8 @@ const test: DudeType = {
 
 ## Useful links
 
-- https://github.com/typescript-cheatsheets/react-typescript-cheatsheet
-- https://basarat.gitbook.io/typescript/tsx
-- https://www.staging-typescript.org/docs/handbook/generics.html
-- https://microsoft.github.io/TypeScript-New-Handbook/outline/
-- https://medium.com/@martin_hotell/react-typescript-and-defaultprops-dilemma-ca7f81c661c7
+- <https://github.com/typescript-cheatsheets/react-typescript-cheatsheet>
+- <https://basarat.gitbook.io/typescript/tsx>
+- <https://www.staging-typescript.org/docs/handbook/generics.html>
+- <https://microsoft.github.io/TypeScript-New-Handbook/outline/>
+- <https://medium.com/@martin_hotell/react-typescript-and-defaultprops-dilemma-ca7f81c661c7>
