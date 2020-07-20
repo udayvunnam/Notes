@@ -1,8 +1,7 @@
 import { useQuery } from "react-query";
 
 const getPosts = async () => {
-  const { data } = await (await fetch("https://jsonplaceholder.typicode.com/posts")).json();
-  return data;
+  return await (await fetch("https://jsonplaceholder.typicode.com/posts")).json();
 };
 
 export default function usePosts() {

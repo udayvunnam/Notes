@@ -1,8 +1,7 @@
 import { useQuery } from "react-query";
 
 const getPostById = async (_, postId) => {
-  const { data } = await (await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)).json()
-  return data;
+  return await (await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)).json()
 };
 
 export default function usePost(postId) {

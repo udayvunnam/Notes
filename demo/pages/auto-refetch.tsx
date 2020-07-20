@@ -6,8 +6,7 @@ const AutoRefetch = () => {
   const [value, setValue] = React.useState<string>("");
 
   const { status, data, error, isFetching } = useQuery("todos", async () => {
-    const { data } = await (await fetch("/api/data")).json();
-    return data;
+    return await (await fetch("/api/data")).json();
   });
 
   const [mutateAddTodo] = useMutation((value: string) => fetch(`/api/data?add=${value}`), {

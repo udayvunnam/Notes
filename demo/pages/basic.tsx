@@ -27,8 +27,7 @@ const Basic = () => {
 
 function usePosts() {
   return useQuery("posts", async () => {
-    const { data } = await (await fetch("https://jsonplaceholder.typicode.com/posts")).json();
-    return data;
+    return await (await fetch("https://jsonplaceholder.typicode.com/posts")).json();
   });
 }
 
@@ -76,8 +75,7 @@ function Posts({ setPostId }) {
 }
 
 const getPostById = async (key, id) => {
-  const { data } = await (await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)).json();
-  return data;
+  return await (await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)).json();
 };
 
 function usePost(postId) {

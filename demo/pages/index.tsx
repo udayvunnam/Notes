@@ -36,6 +36,11 @@ const App = () => {
             <a>focus refetch</a>
           </Link>
         </li>
+        <li>
+          <Link href="/playground">
+            <a>Playground</a>
+          </Link>
+        </li>
       </ol>
     </div>
   );

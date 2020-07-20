@@ -4,8 +4,7 @@ import { useQuery, queryCache, ReactQueryConfigProvider } from "react-query";
 
 // Define a default query function that will receive the query key
 const defaultQueryFn = async (key) => {
-  const { data } = await (await fetch(`https://jsonplaceholder.typicode.com${key}`)).json();
-  return data;
+  return await (await fetch(`https://jsonplaceholder.typicode.com${key}`)).json();
 };
 
 export default function(){
